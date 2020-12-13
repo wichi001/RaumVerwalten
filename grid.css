@@ -1,0 +1,60 @@
+﻿header {
+    grid-area: area1;
+}
+
+nav {
+    grid-area: area2;
+}
+
+main {
+    grid-area: area3;
+}
+
+aside {
+    grid-area: area4;
+}
+
+#countainer{
+    grid-area: areax;
+}
+
+footer {
+    grid-area: area5;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "area1" 
+                         "area2" 
+                         "areax" 
+                         "area5";
+}
+
+#countainer{
+    display: grid;
+    grid-template-columns: auto 500px;
+    grid-template-areas: "area3 area4";
+    
+  }
+
+#infos {
+    grid-area: raum;
+}
+
+#theRoomIMG {
+    grid-area: bild;
+    position: relative;
+}
+
+#table {
+    grid-area: buchung;
+}
+
+#raumdetail {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "raum bild" 
+                         "buchung bild";
+    background-color: rgb(240, 215, 250);
+    padding: 100px;
+}

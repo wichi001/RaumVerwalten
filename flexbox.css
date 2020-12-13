@@ -1,0 +1,18 @@
+.container, 
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+main {
+  flex: 2;
+}
+
+.right-sidebar {
+  flex: 1;
+}

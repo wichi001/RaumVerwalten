@@ -1,0 +1,118 @@
+﻿/* Praktikum 5 */
+
+/* Aufgabe 1: CSS einbinden */
+
+h1 {
+  color: deepskyblue;
+  font-size: 42px;
+}
+
+/* Aufgabe 2: Styling der Formulare */
+
+input:valid {
+  background-color: green;
+}
+
+input:invalid {
+  background-color: red;
+}
+
+input:required {
+  border: 5px solid;
+  content: "*";
+}
+
+fieldset {
+  /* Ecken abrunden Innenabstand */
+  border: groove;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+legend {
+  background-color: lightgoldenrodyellow;
+  box-shadow: 4px 4px 4px gray;
+  border-radius: 10px 5px;
+  font-size: small;
+}
+
+.stern::after {
+  /* Stern*/
+  content: "*";
+  color: red;
+}
+
+/* Aufgabe 3: Styling weiterer Teile der Web-Anwendung*/
+
+aside {
+  border: 2px dotted blue;
+  padding: 3px;
+  margin: 3px;
+  background-color: wheat;
+}
+
+* {
+  font-family: Helvetica;
+}
+
+nav:hover {
+  background-color: antiquewhite;
+}
+
+ul.Navi-Elemente > li {
+  display: inline;
+  margin: 10px;
+}
+
+ul.Navi-Elemente > li:first-child {
+  margin-left: 0px;
+}
+
+ul.Navi-Elemente > li:last-child {
+  margin-right: 0px;
+}
+
+h1 {
+  /*text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;*/
+  color: #222222;
+  text-shadow: 0 0 0.2em #8877ff, 0 0 0.2em #8877ff, 0 0 0.2em #8877ff;
+  letter-spacing: 5px;
+}
+[href*="@"]::before {
+  /*Bild einfügen*/
+  content: url(bild/brief.jpg);
+}
+
+#tableau tr:nth-of-type(even) {
+  /*Table formatieren*/
+  background-color: darkkhaki;
+}
+#tableau thead {
+  background-color: burlywood;
+}
+
+/* Aufgabe 3:Inhaltliche Blöcke stylen*/
+.ver {
+  border-left: solid gray;
+  margin: 5px;
+}
+
+.hori {
+  border-bottom: solid gray;
+  padding: 5px;
+}
+
+#theRoomIMG {
+    float: right;
+    max-width: 100%;
+    height: auto;
+}
+
+#company {
+    position: sticky;
+    bottom: 5px;
+    width: 100%;
+    background-color: aquamarine;
+}

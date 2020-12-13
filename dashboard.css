@@ -1,0 +1,32 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(125, 126, 126);
+    border: 1px solid black;
+    text-align: center;
+}
+
+body div{
+    padding : 10px;
+    margin: 10px;
+    text-align: center;
+}
+div a{
+    position: relative;
+    top: 40%;
+    text-decoration: none;
+    border: none; 
+}
