@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+        <html lang="de">
+            <head>
+              <meta charset="utf-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Raumliste</title>
+              <link rel="stylesheet" href="roomApp-v1/public/css/style.css" />
+              <link rel="stylesheet" href="roomApp-v1/public/css/flexbox.css" />
+            </head>
+            <body>
+              <div class="container">
+              <header>
+                <h1 style="text-align: center">
+                  <a href="roomApp-v1/public/dashboard.html"><img src="roomApp-v1/public/img/logo0.jpg" alt="Logo nicht gefunden!" /></a><span id="title"> Raum-Manager</span>
+                </h1>
+              </header>
+        
+              <nav style="text-align: center">
+                <br />
+                <ul class="Navi-Elemente">
+                  <li><a href="roomApp-v1/public/ListRooms.html">Raumliste</a></li>
+        
+                  <li><a href="roomApp-v1/public/DetailsRoom.html">Raumdetails</a></li>
+        
+                  <li><a href="roomApp-v1/public/DetailsBooking.html">Buchungsdetails</a></li>
+        
+                  <li><a href="roomApp-v1/public/CreateSeminar.html">Seminar anlegen</a></li>
+                </ul>
+              </nav>
+              <div class="content">
+              <main>
+                <article title="Suchformular">
+                  <h2>Räumen suchen:</h2>
+                  <form
+                    action=" https://labs.inf.fh-dortmund.de/roomReservationService/testRoomSearch.php"
+                    method="GET"
+                  >
+                    <fieldset>
+                      <legend>SuchRaum:</legend>
+                      <br />
+                      <label>
+                        Raum eingeben:
+                        <input
+                          required
+                          name="roomno"
+                          size="20"
+                          maxlength="6"
+                          pattern="[A-Z-.-E1-3-.]+[0-9]{2}"
+                        />
+                      </label>
+                    </fieldset>
+                    <br />
+                    <button type="submit"><em>Senden</em></button>
+                  </form>
+                </article>
+                
+                <article title="Raumliste">
+                  <h2>Liste von Räumen:</h2>
+                  <ul>
+                  <li> Raumnummer : 11</li><li> Raumnummer : 3</li>
+                  </ul>
+                </article>
+              </main>
+              <aside class="right-sidebar">
+                <h3>Aktuelle Meldungen</h3>
+                <ul>
+                  <li>19.04.2020: Ab heute beginnen die Onlineseminare!</li>
+                  <li>
+                    30.03.2020: Wegen der Corona-Lage entfällt der Seminarbetrieb!
+                  </li>
+                </ul>
+              </aside>
+              </div>
+              <footer id="company">
+                <p style="text-align: center">&copy; by NiCHi</p>
+              </footer>
+            </div>
+            <script src="roomApp-v1/public/js/jscript.js"></script>
+            </body>
+        </html>
+        

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raumdetails</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+</head>
+  <body>
+    <header>
+      <h1 style="text-align: center">
+        <a href="dashboard.html"><img src="img/logo0.jpg" alt="Logo nicht gefunden!" /></a><span id="title"> Raum-Manager</span>
+      </h1>
+    </header>
+    <nav style="text-align: center">
+      <ul class="Navi-Elemente">
+        <li><a href="../ListRooms.html">Raumliste</a></li>
+
+        <li><a href="DetailsRoom.html">Raumdetails</a></li>
+
+        <li><a href="DetailsBooking.html">Buchungsdetails</a></li>
+
+        <li><a href="CreateSeminar.html">Seminar anlegen</a></li>
+      </ul>
+    </nav>
+    <div id="countainer">
+    <main>
+      <section id ="raumdetail">
+      <article title="Informationen zum Raum" id="infos">
+        <h3>Informationen zum Raum</h3>
+        <ul id="infosRaum">
+         
+        </ul>
+      </article>
+
+      <article title="Abbildung">
+        <h2>Abbildung</h2>
+        <figure>
+          <img src="img/pic.jpg" alt="Foto des Raums nicht gefunden!" id="theRoomIMG" />
+          <figcaption id="caption">Pressefotografie</figcaption>
+        </figure>
+      </article>
+
+      <article title="Alle Buchungen" id="table">
+        <h2>Alle Buchungen</h2>
+
+        <table id="tableau">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Startuhrzeit</th>
+              <th>Enduhrzeit</th>
+              <th>Bezeichnung</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </article>
+    </section>
+    </main>
+    <aside>
+      <h3>Aktuelle Meldungen</h3>
+      <ul>
+        <li>19.04.2020: Ab heute beginnen die Onlineseminare!</li>
+        <li>30.03.2020: Wegen der Corona-Lage entfällt der Seminarbetrieb!</li>
+      
+      </ul>
+    </aside>
+  </div>
+    <footer id="company">
+      <p style="text-align: center">&copy; by NiCHi</p>
+    </footer>
+    <script src="js/jscript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Titel meiner Web-Seite</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+</head>
+
+<body>
+    
+   
+    <header>
+      <%- include("include/header.ejs") %>
+      </header> <main> 
+                
+                  <div>
+                    <a href="DetailsBooking">
+                         Buchungsdetails
+                       </a>
+                  </div>
+                 <div>
+                       <a href="DetailsRoom">
+                         Raumdetails
+                       </a>
+                 </div>
+                 <div>
+                       <a href="ListRooms">
+                        Raumliste
+                       </a>
+                </div>
+                <div>
+                       <a href="CreateSeminar">
+                        Seminar anlegen
+                       </a>
+                </div>
+
+                <div id="btn">
+                  <a>+</a>
+               </div>
+                
+            </main>
+            <footer id="company">
+              <%- include("include/footer.ejs") %>
+              </footer>
+
+              <script src="js/dashboard.js"></script>
+</body>
+
+</html>
